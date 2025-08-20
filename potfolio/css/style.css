@@ -2334,8 +2334,10 @@ blockquote {
  */
 .header-logo {
   line-height: 1;
+ 
 }
 .header-logo a {
+  
   display: inline-block;
 }
 

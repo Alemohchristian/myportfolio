@@ -100,8 +100,7 @@
                         <div class="col-lg-12">
 							<div class="mapouter">
 								<div class="gmap_canvas">
-									<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=121%20King%20St%2C%20Melbourne%20VIC%203000%2C%20Australia&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-									<a href="https://sites.google.com/view/maps-api-v2/mapv2"></a>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126497.66962369379!2d4.48029909159383!3d7.784293139987867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103787e4c949b8fd%3A0x33c62c1600f59277!2sOsogbo%2C%20Osun!5e0!3m2!1sen!2sng!4v1755680918087!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 								</div>
 							</div>
                         </div>
@@ -111,7 +110,8 @@
                             <h4 class="small-title">
 								<span>GET IN TOUCH</span>
 							</h4>
-                            <form action="https://whizthemes.com/nazmul/php/mail.php" method="POST" id="contact-form" class="karigor-form">
+                            <form target="_blank" id="contact-f" action="https://submify.vercel.app/danielwebstudiodev@gmail.com" method="POST" class="karigor-form">
+								
                                 <div class="karigor-form-inner">
                                     <div class="karigor-form-input karigor-form-input-half">
                                         <input type="text" name="name" placeholder="Name*" required>
@@ -131,6 +131,7 @@
 										</button>
                                     </div>
                                 </div>
+								
 							</form>
 							<p class="form-message"></p>
                         </div>
@@ -146,10 +147,10 @@
 		<footer class="footer-area bg-white">
 			<div class="container">
 				<ul class="footer-inner">
-					<li>34/5 evergreen road, concord city <br> New work, Nigeria</li>
-					<li><a href="tel://+008341237654">+00834 123 7654</a></li>
-					<li><a href="mailto://info@example.com">info@example.com</a></li>
-					<li>Copyright &copy; <a href="#">HasTech</a> 2023. All Right Reserved</li>
+					<li>Osogbo, Osun State <br>Nigeria</li>
+					<li><a href="tel://+008341237654">+234 808 957 9732</a></li>
+					<li><a href="mailto://info@example.com">danielwebstudiodev@gmail.com</a></li>
+					<li>Copyright &copy; <a href="#">DanielWebStudio</a> 2025. All Right Reserved</li>
 				</ul>
 			</div>
 		</footer>
@@ -165,6 +166,26 @@
 	<script src="js/plugins.js"></script>
 	<script src="js/ajax-mail.js"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+document.getElementById("contact-f").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  // Send to Submify in the background
+  fetch(this.action, {
+    method: "POST",
+    body: new FormData(this)
+  }).catch(err => {
+    // ignore errors
+    console.log("Submify error:", err);
+  });
+
+  // Redirect instantly
+  window.location.href = "thankyou.html";
+});
+</script>
+
+	
 </body>
 
 
