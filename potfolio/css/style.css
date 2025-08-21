@@ -3711,10 +3711,11 @@ nav.main-navigation ul li:hover > ul {
  * About
  */
 .about-image {
-  margin-right: 20px;
+  margin-right: 0px;
 }
 .about-image img {
-  width: 100%;
+  width: 80%;
+  height:500px;
 }
 
 .about-content h2 {
