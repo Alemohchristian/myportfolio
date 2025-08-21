@@ -2674,7 +2674,7 @@ nav.main-navigation ul li:hover > ul {
 }
 
 .hero-area-text {
-  padding: 120px 0;
+  padding: 250px 0;
 }
 .hero-area-text h1 {
   line-height: 1.5;
@@ -2687,7 +2687,7 @@ nav.main-navigation ul li:hover > ul {
   letter-spacing: 2px;
 }
 .hero-area-text .readmore {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .hero-area-image {
